@@ -29,10 +29,7 @@ const config: Config = {
       colors: {
         primary: '#201f27',
         secondary: '#2E3038',
-        link: '#0077B6',
-        primaryButton: '#fb923c',
-        secondaryButton: '#fff7ed',
-        tertiaryButton: '#ea580c'
+        link: '#0077B6'
       },
       textColor: {
         primary: '#4b5563',
