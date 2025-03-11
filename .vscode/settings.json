@@ -1,10 +1,12 @@
 {
-  "tailwindCSS.includeLanguages": {
-    "typescript": "javascript", // if you are using typescript
-    "typescriptreact": "javascript" // if you are using typescript with react
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "editor.quickSuggestions": {
-    "strings": true // forces VS Code to trigger completions when editing "string" content
+  "eslint.format.enable": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
   },
   "tailwindCSS.experimental.classRegex": [
     "tw`([^`]*)", // tw`...`

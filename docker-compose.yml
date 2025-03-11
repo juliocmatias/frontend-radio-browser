@@ -6,16 +6,16 @@ services:
       context: .
       target: dependencies
     ports:
-      - ${PORT}:${PORT}
+      - ${FRONTEND_PORT}:${FRONTEND_PORT}
     env_file:
       - .env
     environment:
-      - PORT=${PORT}
+      - PORT=${FRONTEND_PORT}
     volumes:
-      - ./:/home/node/app
+      - .:/home/node/app
     command: npm run dev
     healthcheck:
-      test: ['CMD', 'curl', '-f', '0.0.0.0:${PORT}']
+      test: [ 'CMD', 'curl', '-f', '0.0.0.0:${FRONTEND_PORT}' ]
       interval: 1m30s
       timeout: 30s
       retries: 5

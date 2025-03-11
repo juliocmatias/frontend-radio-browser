@@ -2,9 +2,42 @@
   "trailingComma": "none",
   "semi": true,
   "singleQuote": true,
+  "tabWidth": 2,
+  "printWidth": 80,
   "tailwindConfig": "./tailwind.config.ts",
   "plugins": [
+    "@ianvs/prettier-plugin-sort-imports",
     "prettier-plugin-tailwindcss"
   ],
-  "pluginSearchDirs": false
+  "tailwindFunctions": [
+    "tw"
+  ],
+  "tailwindPreserveWhitespace": true,
+  "importOrder": [
+    "^next$",
+    "^react$",
+    "",
+    "<BUILTIN_MODULES>",
+    "",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^@shared/",
+    "^@/components/",
+    "^@/pages/",
+    "^@/utils/",
+    "^@/models/",
+    "^@/store/",
+    "^@/lib/",
+    "^@/templates/",
+    "^@/styles/",
+    "",
+    "^[./]"
+  ],
+  "importOrderParserPlugins": [
+    "typescript",
+    "jsx",
+    "tsx",
+    "decorators-legacy"
+  ],
+  "importOrderCaseSensitive": true
 }

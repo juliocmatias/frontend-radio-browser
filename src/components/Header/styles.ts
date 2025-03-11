@@ -1,12 +1,12 @@
 import tw from 'tailwind-styled-components';
 
 export const Container = tw.header`
+	bg-secondary 
 	z-40 
-	h-16 
 	flex 
+	h-16 
 	w-full 
 	items-center 
-	bg-secondary 
 	shadow-lg 
 	backdrop-blur-md 
 	transition-all 

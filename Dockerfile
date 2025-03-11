@@ -20,8 +20,8 @@ RUN npm run build
 # Stage 4: Production
 FROM base AS production
 ENV NODE_ENV=production
-ENV PORT=$PORT
-EXPOSE $PORT
+ENV PORT=$FRONTEND_PORT
+EXPOSE $FRONTEND_PORT
 
 COPY --chown=node:node ./package*.json ./
 RUN npm install --production
