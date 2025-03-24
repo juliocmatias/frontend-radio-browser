@@ -1,17 +1,11 @@
 import tw from 'tailwind-styled-components';
 
 export const Container = tw.header`
-	bg-secondary 
+	bg-primary 
 	z-40 
-	flex 
-	h-16 
-	w-full 
-	items-center 
-	shadow-lg 
-	backdrop-blur-md 
-	transition-all 
-	duration-300 
-	ease-in-out
+	h-20
+	w-full
+	items-center
 `;
 
 export const Content = tw.div`
@@ -20,5 +14,4 @@ export const Content = tw.div`
   w-full
   items-center
   justify-center
-  px-4
 `;
