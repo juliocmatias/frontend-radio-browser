@@ -9,12 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
+        inter: ['Inter', 'sans-serif'],
         permanent: ['Permanent Marker', 'cursive'],
         foldit: ['Foldit', 'cursive']
       },
       colors: {
         primary: '#2F2F33',
         secondary: '#1E1E21',
+        tertiary: '#62626C',
+        card: '#4D4D56',
         link: '#1267FC'
       }
     }
