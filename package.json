@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint src --max-warnings=0 --fix --no-warn-ignored",
     "test": "jest --passWithNoTests",
-    "test:watch": "npm run test --watch",
+    "test:watch": "npm run test -- --watchAll",
     "test:coverage": "npm run test --coverage --detectOpenHandles",
     "test:coverage:text": "npm run test --coverageReporters='text-summary'",
     "prepare": "husky"
@@ -20,6 +20,7 @@
     ]
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.7",
     "next": "15.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
