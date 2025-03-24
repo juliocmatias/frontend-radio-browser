@@ -13,9 +13,9 @@ const config: Config = {
         foldit: ['Foldit', 'cursive']
       },
       colors: {
-        primary: '#201f27',
-        secondary: '#2E3038',
-        link: '#0077B6'
+        primary: '#2F2F33',
+        secondary: '#1E1E21',
+        link: '#1267FC'
       }
     }
   }
